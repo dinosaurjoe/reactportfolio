@@ -8,8 +8,8 @@ import {
   SectionTitle,
   ProfilePic
    } from './Home.style';
-   import WhenInView from 'components/WhenInView/WhenInView';
-import { NavComponent } from 'components/Navbar/Navbar'
+import WhenInView from 'components/WhenInView/WhenInView';
+import { NavComponent } from 'components/Navbar/Navbar';
 
 export default class Home extends Component {
   static propTypes = {};

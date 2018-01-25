@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { Nav } from './Navbar.style';
+import { NavBar } from './Navbar.style';
 
 export class NavComponent extends Component {
   render () {
     return (
-      <nav>
+      <NavBar>
         <div className="navWide">
           <div className="wideDiv">
             <a href="#">Link 1</a>
@@ -20,7 +20,7 @@ export class NavComponent extends Component {
             <a href="#" onClick={this.burgerToggle}>Link 3</a>
           </div>
         </div>
-      </nav>
+      </NavBar>
     );
   }
 

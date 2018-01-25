@@ -1,70 +1,63 @@
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 
-export const Nav = styled.nav`
-    nav {
-      z-index: 0;
-      background-color: #00F;
+export const NavBar = styled.div`
+     {
+      background-color: #CCC;
       overflow: hidden;
       padding: 1em;
-
-      a {
-        color: #FFF;
-      }
-
-      a:visited {
-        color: #FFF;
-      }
-
       border-bottom: 1px solid #000;
+    }
 
-      .navWide {
-        display: none;
-        margin: 0 auto;
+     a {
+        color: #000;
+    }
 
-        .wideDiv {
-          text-align: center;
+     a:visited {
+        color: #000;
+    }
 
-          a {
-            text-decoration: none;
-            display: inline-block;
-            padding: 0 2em;
-          }
-        }
-      }
+     .navWide {
+      display: none;
+      margin: 0 auto;
+    }
 
-      .navNarrow {
+     .navWide .wideDiv {
+      text-align: center;
+    }
 
-        i {
-          float: left;
-          cursor: pointer;
-          color: #FFF;
-        }
+     .navWide .wideDiv a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 0 2em;
+    }
 
-        .narrowLinks {
-          display: none;
 
-          a {
-            text-decoration: none;
-            display: block;
-            float: left;
-            clear: left;
-            padding: 0.5em 0;
-          }
-        }
-      }
+     .navNarrow i {
+      float: left;
+      cursor: pointer;
+      color: #000;
+    }
+
+     .navNarrow .narrowLinks a {
+      text-decoration: none;
+      display: block;
+      float: left;
+      clear: left;
+      padding: 0.5em 0;
+    }
+
+    .hidden {
+      display: none;
     }
 
     @media (min-width: 480px) {
 
-      nav {
+       .navWide {
+        display: block;
+      }
 
-        .navWide {
-          display: block;
-        }
-
-        .navNarrow {
-          display: none;
-        }
+       .navNarrow {
+        display: none;
       }
     }
-    `;
+`;

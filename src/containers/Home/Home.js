@@ -8,7 +8,8 @@ import {
   SectionTitle,
   ProfilePic
    } from './Home.style';
-   import WhenInView from 'components/WhenInView/WhenInView'
+   import WhenInView from 'components/WhenInView/WhenInView';
+import { NavComponent } from 'components/Navbar/Navbar'
 
 export default class Home extends Component {
   static propTypes = {};
@@ -16,6 +17,8 @@ export default class Home extends Component {
   render() {
     return (
         <Container>
+        <NavComponent>
+        </NavComponent>
           <HeroImage>
             <h1>Joe Schafer</h1>
             <h3>Web Developer / Digital Media Specialist</h3>

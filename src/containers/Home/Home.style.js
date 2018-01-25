@@ -131,6 +131,8 @@ export const SectionTitle = styled.div`
   display: inline-block;
   margin-left: 120px;
   margin-top: 200px;
+  padding-right: 20px;
+  padding-left: 20px;
   background-color: ${orange};
   box-shadow: 8px 8px 0px ${light};
 

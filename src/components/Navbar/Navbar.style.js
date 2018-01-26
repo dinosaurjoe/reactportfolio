@@ -1,20 +1,29 @@
 import styled from 'styled-components';
+import { light, orange, yellow, dark } from 'theme/variables';
 
 export const NavBar = styled.div`
      {
-      background-color: #CCC;
+      background-color: white;
       overflow: hidden;
       padding: 1em;
-      border-bottom: 1px solid #000;
+      border-bottom: 1px solid white;
+      color: ${light};
     }
 
      a {
-        color: #000;
+        color: ${light};
+        margin-left: 40px;
+        margin-right: 40px;
     }
 
      a:visited {
-        color: #000;
+        color: ${light};
     }
+
+    a:hover {
+        color: ${dark};
+        text-decoration: underline white;
+      }
 
      .navWide {
       display: none;

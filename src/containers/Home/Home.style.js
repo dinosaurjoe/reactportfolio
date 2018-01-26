@@ -102,7 +102,7 @@ export const RevealLeft = styled.p`
   padding-bottom: 40px;
   margin-right: 120px;
   margin-left: 120px;
-  background-color: ${orange};
+  background-color: ${dark};
   box-shadow: 8px 8px 0px ${light};
   outline-offset: 15px;
 
@@ -133,11 +133,11 @@ export const SectionTitle = styled.div`
   margin-top: 200px;
   padding-right: 20px;
   padding-left: 20px;
-  background-color: ${orange};
-  box-shadow: 8px 8px 0px ${light};
+  background-color: ${light};
+  box-shadow: 8px 8px 0px ${orange};
 
   SectionTitle:hover {
     background-color: ${light};
-    box-shadow: 8px 8px 0px ${orange};
+    box-shadow: 8px 8px 0px ${dark};
   }
 `

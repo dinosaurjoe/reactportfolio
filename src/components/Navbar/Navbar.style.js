@@ -3,7 +3,11 @@ import { light, orange, yellow, dark } from 'theme/variables';
 
 export const NavBar = styled.div`
      {
+      position: fixed;
+      top: 0px;
+      width: 100%;
       background-color: white;
+      z-index: 0;
       overflow: hidden;
       padding: 1em;
       border-bottom: 1px solid white;

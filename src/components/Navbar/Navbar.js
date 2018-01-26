@@ -8,7 +8,7 @@ export class NavComponent extends Component {
         <div className="navWide">
           <div className="wideDiv">
             <a href="#">About</a>
-            <a href="#">Portfolio</a>
+            <a href="#">Projects</a>
             <a href="#">Contact</a>
           </div>
         </div>
@@ -16,7 +16,7 @@ export class NavComponent extends Component {
           <i className="fa fa-bars fa-2x" onClick={this.burgerToggle}></i>
           <div className="narrowLinks">
             <a href="#" onClick={this.burgerToggle}>About</a>
-            <a href="#" onClick={this.burgerToggle}>Portfolio</a>
+            <a href="#" onClick={this.burgerToggle}>Projects</a>
             <a href="#" onClick={this.burgerToggle}>Contact</a>
           </div>
         </div>

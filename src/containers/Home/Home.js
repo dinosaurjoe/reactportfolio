@@ -6,7 +6,8 @@ import {
   RevealLeft,
   RevealRight,
   SectionTitle,
-  ProfilePic
+  ProfilePic,
+  SectionTitle2
    } from './Home.style';
 import WhenInView from 'components/WhenInView/WhenInView';
 import { NavComponent } from 'components/Navbar/Navbar';
@@ -34,10 +35,14 @@ export default class Home extends Component {
           <WhenInView>
             {({ isInView }) =>
               <RevealRight hide={!isInView}>
-                Hey and welcome to my portfolio. My name is Joe Schafer, I'm a digital media specialist and a Front-end developer. I started my professional career in video and, over the years, have gained an interest in web development and languages. Feel free to check out my projects and if you're interested send me an email!
+                Welcome to my portfolio. My name is Joe Schafer, I'm a digital media specialist and a Front-end developer. I started my professional career in video and, over the years, have gained an interest in web development and programming languages. Feel free to check out my projects and if you're interested in collaborating send me an email!
               </RevealRight>
                }
           </WhenInView>
+
+          <SectionTitle2>
+          <h1>Projects</h1>
+          </SectionTitle2>
 
           <WhenInView>
             {({ isInView }) =>

@@ -82,7 +82,7 @@ export const ProfilePic = styled.div`
   margin-top: 50px;
   float: right;
   padding-top: 10px;
-  box-shadow: 8px 8px 0px ${light};
+  box-shadow: 8px 8px 0px ${dark};
   background-image: url('${require('../../assets/joe.jpg')}');
   background-repeat: no-repeat;
   background-size: cover;
@@ -103,7 +103,7 @@ export const RevealLeft = styled.p`
   margin-right: 120px;
   margin-left: 120px;
   background-color: ${dark};
-  box-shadow: 8px 8px 0px ${light};
+  box-shadow: 8px 8px 0px ${orange};
   outline-offset: 15px;
 
   &:after {
@@ -140,4 +140,21 @@ export const SectionTitle = styled.div`
     background-color: ${light};
     box-shadow: 8px 8px 0px ${dark};
   }
-`
+`;
+
+  export const SectionTitle2 = styled.div`
+  width: 30vw;
+  text-align: center;
+  display: inline-block;
+  margin-left: 120px;
+  margin-top: 200px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: ${dark};
+  box-shadow: 8px 8px 0px ${orange};
+
+  SectionTitle:hover {
+    background-color: ${dark};
+    box-shadow: 8px 8px 0px ${dark};
+  }
+`;

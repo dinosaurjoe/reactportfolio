@@ -11,6 +11,7 @@ import {
    } from './Home.style';
 import WhenInView from 'components/WhenInView/WhenInView';
 import { NavComponent } from 'components/Navbar/Navbar';
+import { ThumbComponent } from 'components/Thumbnails/Thumbnails';
 
 export default class Home extends Component {
   static propTypes = {};
@@ -39,6 +40,9 @@ export default class Home extends Component {
               </RevealRight>
                }
           </WhenInView>
+
+          <ThumbComponent>
+          </ThumbComponent>
 
           <SectionTitle2>
           <h1>Projects</h1>

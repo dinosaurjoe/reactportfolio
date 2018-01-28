@@ -13,6 +13,7 @@ import WhenInView from 'components/WhenInView/WhenInView';
 import { NavComponent } from 'components/Navbar/Navbar';
 import { ThumbComponent } from 'components/Thumbnails/Thumbnails';
 import { ProjectThumbComponent } from 'components/ProjectThumbs/ProjectThumbs';
+import { ContactFormComponent } from 'components/ContactForm/ContactForm';
 
 export default class Home extends Component {
   static propTypes = {};
@@ -62,6 +63,8 @@ export default class Home extends Component {
           </WhenInView>
           <ProjectThumbComponent>
           </ProjectThumbComponent>
+          <ContactFormComponent>
+          </ContactFormComponent>
         </Container>
       );
   }

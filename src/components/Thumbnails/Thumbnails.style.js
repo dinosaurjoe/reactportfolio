@@ -1,4 +1,5 @@
 import styled, {css} from 'styled-components';
+import { orange } from 'theme/variables';
 
 export const Thumbnails = styled.div`
     width: 80%;
@@ -21,9 +22,16 @@ export const Thumbnails = styled.div`
     line-height: 0
 }
   img {
-    margin: 10px;
-    width: 150px;
-    height: 150px;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+    padding: 4px;
+  }
+
+  img:hover {
+    background-color: ${orange};
+    border-radius: 10px;
   }
 
   &:after {

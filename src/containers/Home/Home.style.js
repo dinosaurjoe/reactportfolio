@@ -147,11 +147,11 @@ export const SectionTitle = styled.div`
   text-align: center;
   display: inline-block;
   margin-left: 120px;
-  margin-top: 200px;
+  margin-top: 2px;
   padding-right: 20px;
   padding-left: 20px;
   background-color: ${dark};
-  box-shadow: 8px 8px 0px ${orange};
+  box-shadow: 8px 8px 0px ${light};
 
   SectionTitle:hover {
     background-color: ${dark};

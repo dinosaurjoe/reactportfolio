@@ -1,5 +1,5 @@
 import styled, {css} from 'styled-components';
-import { light, dark, orange } from 'theme/variables';
+import { light, dark, yellow } from 'theme/variables';
 
 export const ProjectThumbs = styled.div`
     width: 80%;
@@ -23,7 +23,7 @@ export const ProjectThumbs = styled.div`
     line-height: 0
 }
   img {
-    width: 42%;
+    width: 40%;
 
     margin: 40px;
     box-shadow: 8px 8px 0px ${dark};
@@ -31,7 +31,7 @@ export const ProjectThumbs = styled.div`
   }
 
   img:hover {
-    box-shadow: 8px 8px 0px ${orange};
+    box-shadow: 8px 8px 0px ${yellow};
   }
 
   &:after {

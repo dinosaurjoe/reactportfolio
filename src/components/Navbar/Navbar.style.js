@@ -25,7 +25,7 @@ export const NavBar = styled.div`
     }
 
     a:hover {
-        color: ${dark};
+        color: ${yellow};
         text-decoration: underline white;
       }
 

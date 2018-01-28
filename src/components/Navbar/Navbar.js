@@ -7,14 +7,16 @@ export class NavComponent extends Component {
       <NavBar>
         <div className="navWide">
           <div className="wideDiv">
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <a href="#" id="homea">Home</a>
+            <a href="#about" id="abouta">About</a>
+            <a href="#" id="projectsa">Projects</a>
+            <a href="#" id="contacta">Contact</a>
           </div>
         </div>
         <div className="navNarrow">
           <i className="fa fa-bars fa-2x" onClick={this.burgerToggle}></i>
           <div className="narrowLinks">
+            <a href="#" onClick={this.burgerToggle}>About</a>
             <a href="#" onClick={this.burgerToggle}>About</a>
             <a href="#" onClick={this.burgerToggle}>Projects</a>
             <a href="#" onClick={this.burgerToggle}>Contact</a>
@@ -32,5 +34,7 @@ export class NavComponent extends Component {
       linksEl.style.display = 'block';
     }
   }
+
 };
+
 

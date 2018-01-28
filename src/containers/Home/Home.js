@@ -12,13 +12,14 @@ import {
 import WhenInView from 'components/WhenInView/WhenInView';
 import { NavComponent } from 'components/Navbar/Navbar';
 import { ThumbComponent } from 'components/Thumbnails/Thumbnails';
+import { ProjectThumbComponent } from 'components/ProjectThumbs/ProjectThumbs';
 
 export default class Home extends Component {
   static propTypes = {};
 
   render() {
     return (
-        <Container>
+        <Container id="top">
         <NavComponent>
         </NavComponent>
           <HeroImage>
@@ -30,7 +31,7 @@ export default class Home extends Component {
                 <h1>About</h1>
             </SectionTitle>
 
-            <ProfilePic>
+            <ProfilePic id="about">
             </ProfilePic>
 
           <WhenInView>
@@ -41,13 +42,19 @@ export default class Home extends Component {
                }
           </WhenInView>
 
-          <ThumbComponent>
-          </ThumbComponent>
+          <WhenInView>
+            {({ isInView }) =>
+              <ThumbComponent hide={!isInView}>
+              </ThumbComponent>
+            }
+          </WhenInView>
 
           <SectionTitle2>
           <h1>Projects</h1>
           </SectionTitle2>
 
+          <ProjectThumbComponent>
+          </ProjectThumbComponent>
           <WhenInView>
             {({ isInView }) =>
             <RevealLeft hide={!isInView}>

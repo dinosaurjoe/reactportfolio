@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 
 export const Thumbnails = styled.div`
     width: 80%;
@@ -26,4 +26,23 @@ export const Thumbnails = styled.div`
     height: 150px;
   }
 
-`;
+  &:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transform-origin: right;
+    transform: rotateY(90deg);
+    transition: transform 1s;
+  }
+  ${({ hide }) => hide && css`
+    &:after {
+      transform: rotateY(0deg);
+    }
+  `}
+`;﻿
+
+

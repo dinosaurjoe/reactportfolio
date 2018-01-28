@@ -7,7 +7,7 @@ export const NavBar = styled.div`
       top: 0px;
       width: 100%;
       background-color: white;
-      z-index: 0;
+      z-index: 1;
       overflow: hidden;
       padding: 1em;
       border-bottom: 1px solid white;

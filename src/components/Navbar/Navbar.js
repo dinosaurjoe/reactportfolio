@@ -7,10 +7,10 @@ export class NavComponent extends Component {
       <NavBar>
         <div className="navWide">
           <div className="wideDiv">
-            <a href="#" id="homea">Home</a>
+            <a href="#top" id="homea">Home</a>
             <a href="#about" id="abouta">About</a>
-            <a href="#" id="projectsa">Projects</a>
-            <a href="#" id="contacta">Contact</a>
+            <a href="#projects" id="projectsa">Projects</a>
+            <a href="#contact" id="contacta">Contact</a>
           </div>
         </div>
         <div className="navNarrow">

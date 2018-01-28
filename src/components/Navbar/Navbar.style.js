@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { light, orange, yellow, dark } from 'theme/variables';
+import { light, yellow } from 'theme/variables';
 
 export const NavBar = styled.div`
      {

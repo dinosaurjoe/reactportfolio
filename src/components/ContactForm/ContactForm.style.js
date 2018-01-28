@@ -1,4 +1,4 @@
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 import { light, dark, yellow, orange } from 'theme/variables';
 
 export const ContactForm = styled.div`

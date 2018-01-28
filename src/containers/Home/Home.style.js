@@ -1,5 +1,5 @@
 import styled, {css} from 'styled-components';
-import { light, orange, yellow, dark } from 'theme/variables';
+import { light, orange, dark } from 'theme/variables';
 
 export const Image = styled.img`
   width: 100%;

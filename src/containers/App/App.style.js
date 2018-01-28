@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { light, dark, green } from 'theme/variables';
 
 export const Background = styled.div`
   position: fixed;

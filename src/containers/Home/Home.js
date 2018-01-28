@@ -1,7 +1,6 @@
-import React, { Component, PropTypes } from 'react';
-import { Container, AboutContainer } from 'theme/grid';
+import React, { Component } from 'react';
+import { Container } from 'theme/grid';
 import {
-  Image,
   HeroImage,
   RevealLeft,
   RevealRight,
@@ -16,7 +15,6 @@ import { ProjectThumbComponent } from 'components/ProjectThumbs/ProjectThumbs';
 import { ContactFormComponent } from 'components/ContactForm/ContactForm';
 
 export default class Home extends Component {
-  static propTypes = {};
 
   render() {
     return (
@@ -50,7 +48,7 @@ export default class Home extends Component {
             }
           </WhenInView>
 
-          <SectionTitle2>
+          <SectionTitle2 id="projects">
           <h1>Projects</h1>
           </SectionTitle2>
 
@@ -63,7 +61,7 @@ export default class Home extends Component {
           </WhenInView>
           <ProjectThumbComponent>
           </ProjectThumbComponent>
-          <ContactFormComponent>
+          <ContactFormComponent id="contactform">
           </ContactFormComponent>
         </Container>
       );
